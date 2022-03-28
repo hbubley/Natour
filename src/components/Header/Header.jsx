@@ -12,6 +12,7 @@ const Header = () => {
           <span className={styles.headingPrimaryMain}>Outdoors</span>
           <span className={styles.headingPrimarySub}>is where life happens</span>
         </h1>
+        <a href="#" className={`${styles.button} ${styles.buttonWhite}`}>Discover our Tours</a>
       </div>
     </div>
   )

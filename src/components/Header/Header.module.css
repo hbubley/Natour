@@ -30,6 +30,7 @@ Dark green: #28b485
     color: #fff;
     text-transform: uppercase;
     backface-visibility: hidden;
+    margin-bottom: 60px;
 }
 
 .headingPrimaryMain{
@@ -56,6 +57,20 @@ Dark green: #28b485
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.button:link, 
+.button:visited{
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.buttonWhite{
+    background-color: #fff;
+    color: #777;
+    padding: 15px 40px;
+    display: inline-block;
 }
 
 @keyframes moveInLeft {
