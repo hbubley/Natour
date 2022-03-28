@@ -1,8 +1,10 @@
 import React from 'react'
 
-const Button = () => {
+const Button = ({ text, variant, animated, text, onClick }) => {
+  const _animated = animated ? styles.buttonAnimated : ''
+  const _variant = primary ? styles.buttonWhite: ''
   return (
-    <div></div>
+    <a href="#" className={`${styles.button} ${_variant} ${_animated}`}>{text}</a>
   )
 }
 
