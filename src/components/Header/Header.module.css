@@ -64,13 +64,25 @@ Dark green: #28b485
 .button:visited{
     text-transform: uppercase;
     text-decoration: none;
+    border-radius: 100px;
+    padding: 15px 40px;
+    display: inline-block;
+    transition: all 0.2s;
+}
+
+.button:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.button:active{
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 .buttonWhite{
     background-color: #fff;
     color: #777;
-    padding: 15px 40px;
-    display: inline-block;
 }
 
 @keyframes moveInLeft {
