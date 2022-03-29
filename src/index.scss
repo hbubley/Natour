@@ -8,6 +8,8 @@ Medium green: #55c57a
 Dark green: #28b485
 
 */
+@import './utilities/variables';
+
 html{
   font-size: 10px;
 }
@@ -18,7 +20,7 @@ body {
   font-size: 16px;
   line-height: 1.7;
   font-weight: 400;
-  color: #777; 
+  color: $color-grey-dark; 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   padding: 3rem;
