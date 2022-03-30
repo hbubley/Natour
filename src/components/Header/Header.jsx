@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './Header.module.css'
+import styles from './Header.module.scss'
 import logo from '../../img/logo-white.png'
 const Header = () => {
   return (
