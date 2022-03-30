@@ -19,21 +19,21 @@
             z-index: 2;
             outline: 1.5rem solid $color-primary;
         }
+        &P1{
+            left: 0;
+            top: -2rem;
+        }
+        &P2{
+            right: 0;
+            top: 2rem;
+        }
+        &P3{
+            left: 20%;
+            top: 10rem;
+        }
     }
     &:hover &Photo:not(:hover){
         transform: scale(.9);
-    }
-    &PhotoP1{
-        left: 0;
-        top: -2rem;
-    }
-    &PhotoP2{
-        right: 0;
-        top: 2rem;
-    }
-    &PhotoP3{
-        left: 20%;
-        top: 10rem;
     }
 
 }
