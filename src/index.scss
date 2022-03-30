@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
 @import './utilities/variables';
+@import './utilities/layout';
+@import './utilities/mixins';
 
 html{
   font-size: 10px;

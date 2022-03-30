@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './Header.module.scss'
 import logo from '../../img/logo-white.png'
+import PrimaryButton from '../PrimaryButton/PrimaryButton'
 const Header = () => {
   return (
     <div className={styles.header}>
@@ -12,7 +13,7 @@ const Header = () => {
           <span className={styles.headingPrimaryMain}>Outdoors</span>
           <span className={styles.headingPrimarySub}>is where life happens</span>
         </h1>
-        <a href="#" className={`${styles.button} ${styles.buttonWhite} ${styles.buttonAnimated}`}>Discover our Tours</a>
+        <PrimaryButton text={"Discover our tours"} />
       </div>
     </div>
   )

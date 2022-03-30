@@ -1,6 +1,9 @@
 @import '../../utilities/variables';
 @import '../../utilities/animations';
 @import '../../utilities/typography';
+@import '../../utilities/utilities';
+@import '../../utilities/layout';
+@import '../../utilities/mixins';
 
 .header{
     height: 95vh;
@@ -29,66 +32,5 @@
     text-align: center;
 }
 
-.button:link, 
-.button:visited{
-    text-transform: uppercase;
-    text-decoration: none;
-    border-radius: 10rem;
-    padding: 1.5rem 4rem;
-    display: inline-block;
-    transition: all 0.2s;
-    position: relative;
-    &::after {
-        content: "";
-        display: inline-block;
-        height: 100%;
-        width: 100%;
-        border-radius: 10rem;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: -1;
-        transition: all 400ms;
-    }
-    &:hover{
-        transform: translateY(-3px);
-        box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
-        &::after{
-            transform: scale(1.4, 1.6);
-            opacity: 0;
-        }
-    }
-    &:active{
-        transform: translateY(-.1rem);
-        box-shadow: 0 .5rem 1rem rgba($color-black, 0.2);
-    }
-}
-
-.buttonWhite{
-    background-color: $color-white;
-    color: $color-grey-dark;
-    &::after{
-        background-color: $color-white;
-    }
-}
-
-.buttonAnimated{
-    animation: moveInBottom .5s ease-out .75s;
-    animation-fill-mode: backwards;
-}
-
-@keyframes moveInLeft {
-    0% {
-        opacity: 0;
-        transform: translateX(-10rem);
-    }
-    80%{
-        transform: translate(1rem);
-    }
-    100% {
-        opacity: 1;
-        transform: translate(0);
-    }
-}
 
 
