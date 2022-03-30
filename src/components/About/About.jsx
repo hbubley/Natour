@@ -2,6 +2,10 @@ import React from 'react';
 import SecondaryHeading from '../SecondaryHeading/SecondaryHeading';
 import TertiaryTextBlock from '../TertiaryTextBlock/TertiaryTextBlock';
 import styles from './About.module.scss';
+import nat1 from '../../img/nat-1-large.jpg'
+import nat2 from '../../img/nat-2-large.jpg'
+import nat3 from '../../img/nat-3-large.jpg'
+import ImageComposition from '../ImageComposition/ImageComposition';
 
 const About = () => {
     return (
@@ -16,7 +20,7 @@ const About = () => {
                     <a href="#" className={styles.buttonText}>Learn More</a>
                 </div>
                 <div className={`${styles.col} ${styles.col1Of2}`}>
-                    Image Composition
+                    <ImageComposition image1={nat1} image2={nat2} image3={nat3} />
                 </div>
             </div>
         </div>

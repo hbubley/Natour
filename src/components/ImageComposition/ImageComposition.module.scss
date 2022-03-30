@@ -1,0 +1,39 @@
+@import '../../utilities/variables';
+@import '../../utilities/animations';
+@import '../../utilities/typography';
+@import '../../utilities/utilities';
+@import '../../utilities/layout';
+@import '../../utilities/mixins';
+
+.composition {
+    position: relative;
+    transition: all 200ms;
+    &Photo{
+        outline-offset: 2rem;
+        width: 55%;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
+        position: absolute;
+        &:hover{
+            transform: scale(1.05);
+            box-shadow: 0 2.5rem 4rem rgba($color-black, .5);
+            z-index: 2;
+            outline: 1.5rem solid $color-primary;
+        }
+    }
+    &:hover &Photo:not(:hover){
+        transform: scale(.9);
+    }
+    &PhotoP1{
+        left: 0;
+        top: -2rem;
+    }
+    &PhotoP2{
+        right: 0;
+        top: 2rem;
+    }
+    &PhotoP3{
+        left: 20%;
+        top: 10rem;
+    }
+
+}
