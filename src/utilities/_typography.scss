@@ -1,0 +1,31 @@
+.headingSecondary{
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+}
+
+.headingPrimary{
+    color: $color-white;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+    margin-bottom: 6rem;
+    &Main{
+        display: block;
+        font-size: 6rem;
+        font-weight: 400;
+        letter-spacing: 3.5rem;
+        animation-name: moveInLeft;
+        animation-duration: 1000ms;
+        animation-timing-function: ease-out;
+    }
+    &Sub{
+        display: block;
+        font-size: 2rem;
+        font-weight: 700;
+        letter-spacing: 1.74rem;
+        animation-name: moveInRight;
+        animation-duration: 1000ms;
+        animation-timing-function: ease-out;
+    }
+}
