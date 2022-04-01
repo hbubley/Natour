@@ -1,0 +1,53 @@
+@import '../../utilities/variables';
+@import '../../utilities/animations';
+@import '../../utilities/typography';
+@import '../../utilities/utilities';
+@import '../../utilities/layout';
+@import '../../utilities/mixins';
+
+.card{
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    position: relative;
+    height: 50rem;
+    &SideFront{
+        transition: all .5s ease;
+        background-color: $color-white;
+        height: 50rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        backface-visibility: hidden;
+        border-radius: 3px;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+    }
+    &SideBack{
+        transition: all .5s ease;
+        height: 50rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: green;
+        transform: rotateY(180deg);
+        width: 100%;
+        backface-visibility: hidden;
+        border-radius: 3px;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+    }
+    &BackgroundColorPrimary{
+        background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark)
+    }
+    &BackgroundColorSecondary{
+        background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+    }
+    &BackgroundColorTertiary{
+        background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark);
+    }
+    &:hover &SideFront{
+     transform: rotateY(180deg);
+    }
+    &:hover &SideBack{
+     transform: rotateY(0deg);
+    }
+}
