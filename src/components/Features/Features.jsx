@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './Features.module.scss';
-import icons from '../../utilities/icons/icon-font.css'
-import FeatureBox from '../FeatureBox.js/FeatureBox';
+import '../../utilities/icons/icon-font.css'
+import FeatureBox from '../FeatureBox/FeatureBox';
 const Features = () => {
   return (
     <div className={styles.sectionFeatures}>
