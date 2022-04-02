@@ -18,3 +18,27 @@ $gutter-horizontal: 6rem;
 
 //font-size
 $default-font-size: 1.6rem;
+
+:export{
+    color-primary: #55c57a;
+    color-primary-light: #7ed56f;
+    color-primary-dark: #28b485;
+    colorSecondaryLight: $color-secondary-light;
+    colorSecondaryDark: $color-secondary-dark;
+    color-tertiary-light: #2998ff;
+    color-tertiary-dark: #5643fa;
+    
+    color-grey-dark: #777;
+    color-white: #fff;
+    color-black: #000;
+    color-grey-light-1: #f7f7f7;
+    
+    // grid
+    grid-width: 114rem;
+    gutter-vertical: 8rem;
+    gutter-horizontal: 6rem;
+    
+    //font-size
+    default-font-size: 1.6rem;
+     
+}
