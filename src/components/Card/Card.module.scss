@@ -13,7 +13,7 @@
     &SideFront{
         transition: all .5s ease;
         background-color: $color-white;
-        height: 50rem;
+        height: 52rem;
         position: absolute;
         top: 0;
         right: 0;
@@ -44,12 +44,37 @@
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     }
     &Details{
+        padding: 3rem;
+        ul{
+            list-style: none;
+            width: 80%;
+            margin: 0 auto;
+            li{
+                text-align: center;
+                font-size: 1.5rem;
+                padding: 1rem;
+                &:not(:last-child){
+                    border-bottom: 1px solid $color-grey-light-2;
+                }
+            }
+        }
     }
     &Heading{
         font-size: 2.8rem;
         font-weight: 300;
         text-transform: uppercase;
         color: $color-white;
+        position: absolute;
+        top: 10rem;
+        right: 2rem;
+        text-align: right;
+    }
+    &HeadingSpan{
+       padding: 1rem 1.5rem;
+       -webkit-box-decoration-break: clone;
+       box-decoration-break: clone;
+       width: fit-content;
+       display: block;
     }
     &BackgroundColorPrimary{
         background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark);
@@ -67,3 +92,4 @@
      transform: rotateY(0deg);
     }
 }
+
