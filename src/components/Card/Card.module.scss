@@ -42,6 +42,8 @@
         height: 23rem;
         clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
     }
     &Details{
         padding: 3rem;
@@ -90,6 +92,29 @@
     }
     &:hover &SideBack{
      transform: rotateY(0deg);
+    }
+
+    &CTA{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        text-align: center;
+    }
+    &PriceBox{
+        text-align: center;
+        color: $color-white;
+        margin-bottom: 8rem;
+    }
+    &PriceOnly{
+        font-size: 1.4rem;
+        text-transform: uppercase;
+
+    }
+    &PriceValue{
+        font-size: 6rem;
+        font-weight: 100;
     }
 }
 
