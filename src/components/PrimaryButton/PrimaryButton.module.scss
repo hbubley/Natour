@@ -46,6 +46,13 @@
         background-color: $color-white;
     }
 }
+.buttonGreen{
+    background-color: $color-primary;
+    color: $color-white;
+    &::after{
+        background-color: $color-primary;
+    }
+}
 .buttonAnimated{
     animation: moveInBottom .5s ease-out .75s;
     animation-fill-mode: backwards;

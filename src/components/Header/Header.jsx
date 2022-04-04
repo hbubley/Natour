@@ -13,7 +13,7 @@ const Header = () => {
           <span className={styles.headingPrimaryMain}>Outdoors</span>
           <span className={styles.headingPrimarySub}>is where life happens</span>
         </h1>
-        <PrimaryButton text={"Discover our tours"} />
+        <PrimaryButton text={"Discover our tours"} variant={"primary"} />
       </div>
     </div>
   )
