@@ -41,7 +41,7 @@ const Tours = () => {
       <div className={styles.row}>
         {toursData.map((data) => {
           return (
-            <div className={`${styles.col} ${styles.col1Of3}`}>
+            <div key={data.headingLine1} className={`${styles.col} ${styles.col1Of3}`}>
               <Card variant={data.variant} headingLine1={data.headingLine1} headingLine2={data.headingLine2} details={data.details} image={data.image} value={data.value} />
             </div>
           )
